@@ -1,0 +1,125 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #ffffff;
+    scroll-behavior: smooth;
+  }
+  
+  /* Card Styles */
+  .card {
+    width: 90%;
+    max-width: 450px;
+    background: linear-gradient(135deg, #00a1fe, #a13de4);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 30px 20px; 
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Search Bar Styles */
+  .search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px; 
+  }
+  
+  .search input {
+    border: none;
+    outline: none;
+    background: #ebfffc;
+    color: #555;
+    padding: 8px 16px; 
+    height: 40px; 
+    border-radius: 20px; 
+    flex: 1;
+    margin-right: 12px; 
+    font-size: 16px; 
+  }
+  
+  .search button {
+    border: none;
+    outline: none;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 40px; 
+    height: 40px; 
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .search button:hover {
+    transform: scale(1.05);
+  }
+  
+  .search button img {
+    width: 14px; 
+  }
+  
+  /* Weather Styles */
+  .weather-icon {
+    width: 120px; 
+    margin-top: 10px;
+  }
+  
+  .weather h1 {
+    font-size: 48px; 
+    font-weight: 300;
+    margin-bottom: 5px; 
+  }
+  
+  .weather h2 {
+    font-size: 28px; 
+    font-weight: 400;
+  }
+  
+  /* Details Styles */
+  .details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px; 
+    margin-top: 30px; 
+    flex-wrap: wrap; 
+  }
+  
+  .col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 15px; 
+    width: 48%; 
+  }
+  
+  .col img {
+    width: 30px; 
+    margin-right: 8px; 
+  }
+  
+  .humidity,
+  .wind {
+    font-size: 20px; 
+    margin-top: -4px;
+  }
+  
+  /* Media Queries for Smaller Screens */
+  @media (max-width: 375px) {
+    .col {
+      width: 100%; 
+      margin-bottom: 20px;
+      text-align: center; 
+    }
+  
+    .details {
+      padding: 0 20px;
+    }
+  }
